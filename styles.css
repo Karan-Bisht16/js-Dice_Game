@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  font-family:  'Jost', sans-serif;
+}
+body {
+  background-color:#64738c;
+}
+header{
+  height: 130px;
+  background-color: #24284c;
+  border-bottom: 5px #232931 solid;
+}
+.heading{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 10px;
+}
+.name{
+  width: 80%;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: inherit;
+  padding-top: 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+}
+#player1Name, #player2Name{
+  border: 1px #24284c solid;
+  border-radius: 5px;
+  font-size: inherit;
+}
+#playBtn{
+  width: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #2b2f5a;
+  border: 2px whitesmoke solid;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+#playBtn:hover{
+  background-color: #28323e;
+}
+.container{
+  width: 90%;
+  text-align: center;
+  margin: 50px auto;
+}
+.playField{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#dice1 > p, #dice2 > p{
+  font-size: 22px;
+  font-weight: bolder;
+  color: whitesmoke;
+  margin-bottom: 2px;
+}
+.img1, .img2{
+  width: 350px;
+  background-color: white;
+  border-radius: 16%;
+}
+.rollAgain{
+  width: 200px;
+  background-color: #2b2f5a;
+  border-radius: 8px;
+  border: 2px #24284c solid;
+  margin: 30px auto 10px auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.result{
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.rollAgain:hover{
+  background-color: #28323e;
+}
+#rollBtn{
+  font-size: 25px;
+  font-weight: bolder;
+  color: whitesmoke;
+  background-color: inherit;
+  border: none;
+}
+footer {
+  height: 130px;
+  background-color: #24284c;
+  border-top: 5px #232931 solid;
+}
+.contact > p {
+  padding: 20px 0 10px 20px;
+  color: whitesmoke;
+  font-size: 20px;
+} 
+.links {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
