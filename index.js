@@ -1,15 +1,39 @@
-window.onbeforeunload = function(){
-    return "your data will be lost";
-}
+const player1 = document.querySelector('#player1Name');
+const player2 = document.querySelector('#player2Name');
 
-function addNames(){
-    let player1 = document.querySelector("#player1Name").value.trim();
-    if (player1!==''){
-        document.querySelector("#dice1 p").textContent=player1;
+window.onbeforeunload = function(){
+    if (player1.value.trim()!=='' || player2.value.trim()!==''){
+        return "Data will be lost.";
+    } 
+}
+player1.addEventListener('keypress', function(event){
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        if (player2.value.trim()===''){
+            player2.focus();
+        } else{
+            document.querySelector('#playBtn').focus();
+            document.querySelector('#playBtn').click();
+        }
     }
-    let player2 = document.querySelector("#player2Name").value.trim();
-    if (player2!==''){
-        document.querySelector("#dice2 p").textContent=player2;
+});
+player2.addEventListener('keypress', function(event){
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        if (player1.value.trim()===''){
+            player1.focus();
+        } else{
+            document.querySelector('#playBtn').focus();
+            document.querySelector('#playBtn').click();
+        }
+    }
+});
+function addNames(){
+    if (player1.value.trim()!==''){
+        document.querySelector("#dice1 p").textContent=player1.value.trim();
+    }
+    if (player2.value.trim()!==''){
+        document.querySelector("#dice2 p").textContent=player2.value.trim();
     }
 }
 
