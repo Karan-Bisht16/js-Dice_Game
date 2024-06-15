@@ -59,9 +59,8 @@ header {
 .container {
     width: 100%;
     text-align: center;
-    margin: 50px auto;
     position: relative;
-    top: 125px;
+    top: 150px;
 }
 
 .playField {
@@ -117,7 +116,7 @@ header {
 }
 
 footer {
-    height: 130px;
+    height: 100px;
     background-color: #24284c;
     border-top: 5px #232931 solid;
     position: absolute;
@@ -126,7 +125,7 @@ footer {
 }
 
 .contact>p {
-    padding: 20px 0 10px 20px;
+    padding: 5px 0 10px 20px;
     color: whitesmoke;
     font-size: 20px;
 }
