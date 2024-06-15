@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <title>Roll2Win</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Roll2Wins</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
     <header>
-      <div class="heading">
-        <div class="name">
-          <label>Player 1 <input type="text" id="player1Name" placeholder=" Player 1" autofocus></label>
-          <label>Player 2 <input type="text" id="player2Name" placeholder=" Player 2"></label>
+        <div class="heading">
+            <div class="name">
+                <label>Player 1 <input type="text" id="player1Name" placeholder=" Player 1" autofocus></label>
+                <label>Player 2 <input type="text" id="player2Name" placeholder=" Player 2"></label>
+            </div>
+            <button type="button" id="playBtn" onclick="addNames(); rollAgain();">Play!</button>
         </div>
-        <button type="button" id="playBtn" onclick="addNames(); rollAgain();">Play!</button>
-      </div>
     </header>
 
     <div class="container">
-      <div class="playField">
-        <div id="dice1">
-          <p>Player 1</p>
-          <img class="img1" src="./images/img-dice6.png">
+        <div class="playField">
+            <div id="dice1">
+                <p>Player 1</p>
+                <img class="img1" src="./images/img-dice6.png">
+            </div>
+            <div id="dice2">
+                <p>Player 2</p>
+                <img class="img2" src="./images/img-dice6.png">
+            </div>
         </div>
-        <div id="dice2">
-          <p>Player 2</p>
-          <img class="img2" src="./images/img-dice6.png">
-        </div>
-      </div>
 
-      <div class="rollAgain" onclick="rollAgain();">
-        <img src="./images/img-replay.png" width="35px">
-        <button type="button" id="rollBtn" style="display: block;">Roll Agian</button>
-      </div>
-      <div class="result"></div>
+        <div class="rollAgain" onclick="rollAgain();">
+            <img src="./images/img-replay.png" width="35px">
+            <button type="button" id="rollBtn" style="display: block;">Roll Agian</button>
+        </div>
+        <div class="result"></div>
     </div>
 
     <script src="./index.js"></script>
-  </body>
+</body>
 
-  <footer>
-        <div class="contact">
-            <p>- By Karan Bisht</p>
-            <div class="links">
-                <a href="https://instagram.com/karan_b1603" target="_blank">
-                  <img src="./images/img-instagram.png" width="30px"></a>
-                <a href="https://twitter.com/karan_b1603" target="_blank">
-                  <img src="./images/img-twitter.png" width="30px"></a>
-                <a href="https://github.com/Karan-Bisht16" target="_blank">
-                  <img src="./images/img-github.png" width="30px"></a>
-                <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
-                  <img src="./images/img-linkedin.png" width="30px"></a>
-            </div>
+<footer>
+    <div class="contact">
+        <p>- By Karan Bisht</p>
+        <div class="links">
+            <a href="https://instagram.com/karan_b1603" target="_blank">
+                <img src="./images/img-instagram.png" width="30px"></a>
+            <a href="https://twitter.com/karan_b1603" target="_blank">
+                <img src="./images/img-twitter.png" width="30px"></a>
+            <a href="https://github.com/Karan-Bisht16" target="_blank">
+                <img src="./images/img-github.png" width="30px"></a>
+            <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
+                <img src="./images/img-linkedin.png" width="30px"></a>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </html>
